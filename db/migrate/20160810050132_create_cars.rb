@@ -14,8 +14,8 @@ class CreateCars < ActiveRecord::Migration[5.0]
       t.string :recommendations
       t.string :comments
       t.string :photo_url
-            
-      t.timestamps
+
+      t.timestamps null: false
     end
   end
 end
