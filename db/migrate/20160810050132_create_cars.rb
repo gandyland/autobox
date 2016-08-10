@@ -15,7 +15,7 @@ class CreateCars < ActiveRecord::Migration[5.0]
       t.string :comments
       t.string :photo_url
 
-      t.timestamps null: false
+      t.timestamps
     end
   end
 end
