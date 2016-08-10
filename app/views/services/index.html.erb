@@ -3,7 +3,7 @@
 <ul>
   <% @services.each do |service| %>
     <li>
-      <%= link_to "#{service.date} - #{service.car.vehicle}", service %>
+      <%= link_to "#{service.car.vehicle} - #{service.date}", service %>
     </li>
   <% end %>
 </ul>

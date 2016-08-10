@@ -2,14 +2,11 @@
 
 <ul>
   <% @cars.each do |car| %>
-    <li>
-      <p><%= link_to car.vehicle, car_path(car) %></p>
-      <p><%= link_to 'Delete Car', car_path(car),
-             method: :delete,
-             data: { confirm: 'Are you sure?' } %></p>
-             <!-- <%= link_to car.vehicle, car %> -->
-
-    </li>
+  <li>
+    <p><%= link_to car.vehicle, car_path(car) %></p>
+    <p><%= link_to 'Delete Car', car_path(car),
+    method: :delete,
+    data: { confirm: 'Are you sure?' } %></p>
+  </li>
   <% end %>
 </ul>
-<!-- <h2><%= link_to "New Car", new_car_path %></h2> -->

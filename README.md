@@ -5,9 +5,7 @@ https://github.com/ga-wdi-exercises/project4
 # AutoBox
 Vehicle Repair and Maintenance Log
 
-
 Project 4 Notes
-
 
 ---Basic Functionality---
 -Able to add anything to any of the ‘Fields of Input’
@@ -15,8 +13,7 @@ Project 4 Notes
   -Especially Update and Delete Functions(Obvi Create Function)
 -Add your own image instead of just a URL image for receipt
 -Add README.md file with User Stories
--Add wireframe photos of planning somehow
-
+-Add original wireframe drawings
 
 ---Maybe Do Afterwards---
 -Have different cars(or use the search function to differentiate)
@@ -29,7 +26,6 @@ Project 4 Notes
   -service
 -User LogIn Function
   -So only their cars show up but still able to use search function
-
 
 ---Fields of Input---
 -vehicle-Vehicle Make, Model and Color

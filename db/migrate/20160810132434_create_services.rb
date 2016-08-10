@@ -8,7 +8,7 @@ class CreateServices < ActiveRecord::Migration[5.0]
       t.string :cost
       t.string :estimate
       t.string :shop
-      t.string :mechanic 
+      t.string :mechanic
       t.string :quality
       t.string :overall
       t.string :recommendations
