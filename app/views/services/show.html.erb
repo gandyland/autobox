@@ -1,0 +1,30 @@
+<h2>Date Serviced: <%= @service.date %> <%= link_to "(edit)", edit_service_path(@service) %></h2>
+<h3>Vehicle: <%= @service.car.vehicle %></h3>
+<h3>Service Preformed: <%= @service.service %></h3>
+
+
+Mileage: <%= @service.mileage %></br>
+Final Cost: $<%= @service.cost %></br>
+Initial Estimate: $<%= @service.estimate %></br>
+Shop Name: <%= @service.shop %></br>
+Mechanic Name: <%= @service.mechanic %></br>
+Quality of Work: <%= @service.quality %></br>
+Overall Experience: <%= @service.overall %></br>
+Mechanic Recommendations: <%= @service.recommendations %></br>
+Additional Personal Comments: <%= @service.comments %></br>
+Recepit Photo: <%= @service.photo_url %></br>
+
+<!--
+t.string :vehicle
+t.string :date
+t.string :mileage
+t.string :service
+t.string :cost
+t.string :estimate
+t.string :shop
+t.string :mechanic
+t.string :quality
+t.string :overall
+t.string :recommendations
+t.string :comments
+t.string :photo_url -->

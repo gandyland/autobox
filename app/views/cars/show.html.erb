@@ -1,17 +1,14 @@
-<h2><%= @car.vehicle %><%= link_to "Cars", cars_path %><%= link_to "(edit)", new_car_path(@car) %></h2>
-<h4><%= @car.date %></h4>
-<h4><%= @car.mileage %></h4>
-<h4><%= @car.service %></h4>
-<h4><%= @car.cost %></h4>
-<h4><%= @car.estimate %></h4>
-<h4><%= @car.shop %></h4>
-<h4><%= @car.mechanic %></h4>
-<h4><%= @car.quality %></h4>
-<h4><%= @car.overall %></h4>
-<h4><%= @car.recommendations %></h4>
-<h4><%= @car.comments %></h4>
+<h2><%= @car.vehicle %><%= link_to "(edit)", new_car_path(@car) %></h2>
 
 
-<img class='car-photo' src="<%= @car.photo_url %>">
 
 <h3>Cars <%= link_to "(+)", new_car_path(@car) %></h3>
+<h3>Services <%= link_to "(+)", new_service_path(@service) %></h3>
+
+<ul>
+  <% @car.services.each do |service| %>
+  <li>
+    <%= link_to "#{service.date} (#{service.mileage})", service %>
+  </li>
+  <% end %>
+</ul>

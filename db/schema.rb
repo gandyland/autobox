@@ -10,27 +10,32 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160810050132) do
+ActiveRecord::Schema.define(version: 20160810132434) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "cars", force: :cascade do |t|
-    t.string   "vehicle"
-    t.string   "date"
-    t.string   "mileage"
-    t.string   "service"
-    t.string   "cost"
-    t.string   "estimate"
-    t.string   "shop"
-    t.string   "mechanic"
-    t.string   "quality"
-    t.string   "overall"
-    t.string   "recommendations"
-    t.string   "comments"
-    t.string   "photo_url"
-    t.datetime "created_at",      null: false
-    t.datetime "updated_at",      null: false
+    t.string "vehicle"
   end
 
+  create_table "services", force: :cascade do |t|
+    t.string  "vehicle"
+    t.string  "date"
+    t.string  "mileage"
+    t.string  "service"
+    t.string  "cost"
+    t.string  "estimate"
+    t.string  "shop"
+    t.string  "mechanic"
+    t.string  "quality"
+    t.string  "overall"
+    t.string  "recommendations"
+    t.string  "comments"
+    t.string  "photo_url"
+    t.integer "car_id"
+    t.index ["car_id"], name: "index_services_on_car_id", using: :btree
+  end
+
+  add_foreign_key "services", "cars"
 end

@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Autobox</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -11,10 +11,8 @@
 
   <nav>
     <%= link_to "Cars", cars_path %>
+    <%= link_to "Services", services_path %>
   </nav>
-  <%= flash.each do|type, message| %>
-  <p class="<%= type %>"><%= message %></p>
-  <% end %>
 
   <%= yield %>
 </body>

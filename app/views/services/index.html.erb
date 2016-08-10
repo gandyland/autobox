@@ -1,0 +1,9 @@
+<h2>Services <%= link_to "(+)", new_service_path %></h2>
+
+<ul>
+  <% @services.each do |service| %>
+    <li>
+      <%= link_to "#{service.date} - #{service.car.vehicle}", service %>
+    </li>
+  <% end %>
+</ul>
