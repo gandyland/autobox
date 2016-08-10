@@ -26,7 +26,7 @@ service_data.each_pair do |car_vehicle, services|
       overall:  service[:overall],
       recommendations:  service[:recommendations],
       comments:  service[:comments],
-      # photo_url:  service[:photo_url],preview_url:  service[:preview_link],
+      photo_url:  service[:photo_url],
       car:       current_car
     })
   end
