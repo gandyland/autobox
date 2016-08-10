@@ -9,7 +9,7 @@ def get_service_data
     {:vehicle=>"1994 Jeep Grand Cherokee", :date=>"8/2/2016", :mileage=>"220,000", :service=>"Brakes Replaced", :cost=>"$112.99", :estimate=>"99.99", :shop=>"McLean Service Center", :mechanic=>"Johnny Justice", :quality=>"5/5", :overall=>"5/5", :recommendations=>"N/A", :comments=>"Good Work", :photo_url=>"http://imganuncios.mitula.net/1994_jeep_grand_cherokee_laredo_4dr_laredo_4wd_suv_6710036463424072993.jpg"}
   ],
   "1985 Jeep CJ-7"=>[
-    {:vehicle=>"1985 Jeep CJ-7", :date=>"8/1/2016", :mileage=>"80,000", :service=>"Replace and Reattach Drive Train", :cost=>"945.35", :estimate=>"900.00", :shop=>"McLean Service Center", :mechanic=>"Billy", :quality=>"5/5", :overall=>"5/5", :recommendations=>"N/A", :comments=>"Good Work", :photo_url=>"https://ccco.s3.amazonaws.com/vehicles/images/1/1/3/4/7/5/113475/1170667_b5c73223de_low_res.JPG"},
+    {:vehicle=>"1985 Jeep CJ-7", :date=>"8/1/2016", :mileage=>"80,000", :service=>"Replace and Reattach Drive Train", :cost=>"945.35", :estimate=>"900.00", :shop=>"McLean Service Center", :mechanic=>"Billy", :quality=>"5/5", :overall=>"5/5", :recommendations=>"N/A", :comments=>"Good Work", :photo_url=>"https://ccco.s3.amazonaws.com/vehicles/images/1/1/3/4/7/5/113475/1170667_b5c73223de_low_res.JPG"}
   ],
   "2006 Dodge Charger"=>[
     {:vehicle=>"2006 Dodge Charger", :date=>"8/1/2016", :mileage=>"50,000", :service=>"Oil Change", :cost=>"$33.09", :estimate=>"$29.99", :shop=>"McLean Service Center", :mechanic=>"Jimmy Justice", :quality=>"5/5", :overall=>"5/5", :recommendations=>"N/A", :comments=>"Good Work", :photo_url=>"https://upload.wikimedia.org/wikipedia/commons/3/3a/06-07_Dodge_Charger_SXT.jpg"},

@@ -12,19 +12,6 @@ Quality of Work: <%= @service.quality %></br>
 Overall Experience: <%= @service.overall %></br>
 Mechanic Recommendations: <%= @service.recommendations %></br>
 Additional Personal Comments: <%= @service.comments %></br>
-Recepit Photo: <%= @service.photo_url %></br>
 
-<!--
-t.string :vehicle
-t.string :date
-t.string :mileage
-t.string :service
-t.string :cost
-t.string :estimate
-t.string :shop
-t.string :mechanic
-t.string :quality
-t.string :overall
-t.string :recommendations
-t.string :comments
-t.string :photo_url -->
+
+<img class='service-photo' src="<%= @service.photo_url %>">
