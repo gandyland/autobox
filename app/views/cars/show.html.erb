@@ -1,4 +1,5 @@
-<h2><%= @car.vehicle %> <%= link_to "(edit)", edit_car_path(@car) %></h2>
+<h2><%= link_to "Cars", cars_path %><%= link_to "(edit)", edit_car_path(@car) %></h2>
+<h4><%= @car.vehicle %></h4>
 <h4><%= @car.date %></h4>
 <h4><%= @car.mileage %></h4>
 <h4><%= @car.service %></h4>
