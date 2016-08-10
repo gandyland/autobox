@@ -1,0 +1,9 @@
+<h2>Cars <%= link_to "(+)", new_car_path %></h2>
+
+<ul>
+<% @cars.each do |car| %>
+<li>
+  <%= link_to car.name, car %>
+</li>
+<% end %>
+</ul>

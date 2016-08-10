@@ -1,0 +1,44 @@
+<h2>New Car</h2>
+
+<%= form_for @car do |f| %>
+<%= f.label :vehicle %>
+<%= f.text_field :vehicle %>
+
+<%= f.label :date %>
+<%= f.text_field :date %>
+
+<%= f.label :mileage %>
+<%= f.text_field :mileage %>
+
+<%= f.label :service %>
+<%= f.text_field :service %>
+
+<%= f.label :cost %>
+<%= f.text_field :cost %>
+
+<%= f.label :estimate %>
+<%= f.text_field :estimate %>
+
+<%= f.label :shop %>
+<%= f.text_field :shop %>
+
+<%= f.label :mechanic %>
+<%= f.text_field :mechanic %>
+
+<%= f.label :quality %>
+<%= f.text_field :quality %>
+
+<%= f.label :overall %>
+<%= f.text_field :overall %>
+
+<%= f.label :recommendations %>
+<%= f.text_field :recommendations %>
+
+<%= f.label :comments %>
+<%= f.text_field :comments %>
+
+<%= f.label :photo_url %>
+<%= f.text_field :photo_url %>
+
+<%= f.submit %>
+<% end %>
