@@ -35,7 +35,7 @@ class CarsController < ApplicationController
     redirect_to cars_path
   end
 
-  private
+
   def car_params
     params.require(:car).permit(:vehicle, :date, :mileage, :service, :cost, :estimate, :shop, :mechanic, :quality, :overall, :recommendations, :comments, :photo_url)
   end

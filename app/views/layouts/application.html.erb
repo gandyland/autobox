@@ -1,14 +1,21 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Autobox</title>
-    <%= csrf_meta_tags %>
+<head>
+  <title>Autobox</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <h1><%= link_to "AutoBox", root_url %></h1>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+  <nav>
+    <%= link_to "Cars", cars_path %>
+  </nav>
+  <%= flash.each do|type, message| %>
+  <p class="<%= type %>"><%= message %></p>
+  <% end %>
 
-  <body>
-    <%= yield %>
-  </body>
+  <%= yield %>
+</body>
 </html>

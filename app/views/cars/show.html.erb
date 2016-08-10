@@ -1,4 +1,4 @@
-<h2><%= @car.vehicle %><%= link_to "Cars", cars_path %><%= link_to "(edit)", edit_car_path(@car) %></h2>
+<h2><%= @car.vehicle %><%= link_to "Cars", cars_path %><%= link_to "(edit)", new_car_path(@car) %></h2>
 <h4><%= @car.date %></h4>
 <h4><%= @car.mileage %></h4>
 <h4><%= @car.service %></h4>
@@ -8,7 +8,7 @@
 <h4><%= @car.mechanic %></h4>
 <h4><%= @car.quality %></h4>
 <h4><%= @car.overall %></h4>
-<h4><%= @car.recommdations %></h4>
+<h4><%= @car.recommendations %></h4>
 <h4><%= @car.comments %></h4>
 
 
