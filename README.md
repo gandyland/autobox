@@ -11,7 +11,7 @@ Project 4 Notes
 ~~~Bronze Functionality~~~
 -Able to add anything to any of the ‘Fields of Input’
 -Full CRUD functionality for anything in the ‘Fields of Input’
- -Especially Update and Delete Functions(Obvi Create Function)
+  -Especially Update and Delete Functions(Obvi Create Function)
 -Add your own image instead of just a URL image for receipt
 -Add README.md file with User Stories
 -Add wireframe photos of planning somehow
@@ -19,15 +19,15 @@ Project 4 Notes
 
 ~~~Maybe Do Afterwards~~~
 -Have different cars(or use the search function to differentiate)
--searchable by any of the main categories
- -vehicle
- -date
- -mileage
- -shop
- -mechanic
- -service
+-Searchable by any of the main categories
+  -vehicle
+  -date
+  -mileage
+  -shop
+  -mechanic
+  -service
 -User LogIn Function
- -So only their cars show up but still able to use search function
+  -So only their cars show up but still able to use search function
 
 
 
