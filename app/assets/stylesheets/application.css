@@ -218,7 +218,7 @@ hr {
   border-style: none;
 }
 .tagline {
-  color: ##CA2220;
+  color: #CA2220;
   margin: 0;
 }
 .intro-text {
@@ -229,7 +229,7 @@ hr {
 .intro-text2 {
   font-size: 16px;
   font-weight: bold;
-  color: ##CA2220;
+  color: #CA2220;
 }
 
 
@@ -314,7 +314,7 @@ nav section .right a {
 /*<button class="button">ABOUT TD</button>
 
 button {
-  background-color: ##CA2220;
+  background-color: #CA2220;
   border: none;
   border-radius: 8px;
   color: #ffffff;
@@ -396,7 +396,7 @@ main section .right .home-header {
 h2 span {
   font-size: 18px;
   font-weight: normal;
-  color: ##CA2220;
+  color: #CA2220;
   display: block;
 }
 p span {
@@ -409,7 +409,7 @@ main .service-icons {
   width: 100%;
   box-sizing: border-box;
   background: #f9f9f9;
-  color: ##CA2220;
+  color: #CA2220;
   text-align: center;
   margin: 40px auto 0px;
   padding: 20px 0px 20px;
@@ -419,7 +419,7 @@ main .service-icons section {
   margin: 30px auto 0px;
 }
 main .service-icons h3 {
-  color: ##CA2220;
+  color: #CA2220;
   font-size: 16px;
 }
 main .service-icons h3:hover {
@@ -457,13 +457,13 @@ main section.intro-page .intro-header p {
 
 /*.intro-icons*/
 main section.intro-page .intro-icons {
-  color: ##CA2220;
+  color: #CA2220;
   font-size: 14px;
   margin: 100px auto 60px;
   padding: 0px;
 }
 main section.intro-page .intro-icons h3 {
-  color: ##CA2220;
+  color: #CA2220;
 }
 main section.intro-page .intro-icons h3:hover {
   color: #187bbd;
@@ -641,7 +641,7 @@ main section.contents-page .left .page-nav li .page-nav-item:active {
   color: #ffffff;
 }
 main section.contents-page .left .page-nav li .page-nav-item .fa {
-  color: ##CA2220;
+  color: #CA2220;
   margin: 0 15px 0 0;
 }
 /*main section.contents-page .left .page-nav ul li {
@@ -716,7 +716,7 @@ main section.contents-page .right .submit-ticket .ticket-entry a {
 }
 main section.contents-page .right .submit-ticket .ticket-entry a .fa {
   margin: 0px 0px 7px;
-  color: ##CA2220;
+  color: #CA2220;
 }
 main section.contents-page .right .submit-ticket .ticket-entry a:hover {
   font-weight: bold;
