@@ -1,15 +1,745 @@
+li {
+  color: #6a7483;
+}
+a, a:link, a:visited {
+  color: #CA2220;
+  font-weight: normal;
+  text-decoration: underline;
+  position: relative
+}
+a:hover, a:active, a:focus {
+  font-weight: bold;
+  text-decoration: none;
+}
+.left, .center, .right, .col {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+    position: relative;
+}
+main section {
+  padding: 60px;
+  margin: 0px auto;
+}
+
 /*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
- * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+h2, h3, h4 {
+  font-size: 1.2em;
+  margin: .5em;
+  padding: .5em;
+}
+
+a {
+  font-size: .75em;
+  margin: .5em;
+  padding: .5em;
+}
+
+a, a:visited {
+  text-decoration: none;
+  margin: .5em;
+  padding: .5em;
+}
+
+a:hover {
+  color:#CA2220;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  margin: .25em;
+  margin: .5em;
+  padding: .5em;
+}
+label {
+  margin: .25em;
+  padding: .1em;
+}
+
+
+nav a {
+  margin: .5em;
+  padding: .5em;
+  font-size: 1.25em;
+}
+
+nav a:hover {
+  background-color: #CA2220;
+  color: black;
+    border: 1px solid #CA2220
+}
+
+
+input {
+  display: block;
+  margin: 5px 0 20px 0;
+  padding: 10px;
+  border: solid 3px #CA2220;
+  width: 500px;
+  background:  black;
+  color: #CA2220;
+  font-size: 1em;
+}
+
+input[type=submit],
+a.delete {
+  width: auto;
+  padding: 9px 15px;
+  background-color: black;
+  border: 5px;
+  font-size: 14px;
+  color: #CA2220;
+}
+
+input.delete, a.delete {
+  background-color: #CA2220;
+}
+
+
+.artist-photo {
+  width: 400px;
+}
+
+span.nationality {
+  font-size: .5em;
+}
+
+.alert {
+  color:#f00;
+}
+.notice {
+  color:#00f;
+}
+*/
+@charset "utf-8";
+
+/**** colors
+red: 	#CA2220
+dark grey:	#1c1e23
+text:	#6a7483
+bkgrd:  #f9f9f9
+****/
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* 01 - GLOBAL SETTINGS */
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+html {
+  background: #1c1e23;
+}
+body {
+  background: #fff;
+  margin: 0px;
+  padding: 0px;
+  font-size: 14px;
+  font-family: "Segoe UI", myriad pro, open source sans, sans-serif;
+}
+p {
+  color: #6a7483;
+  font-size: 14px;
+  margin: 0px 0px 30px;
+}
+h1 {
+  font-size: 45px;
+  color: #ffffff;
+  font-weight: bold;
+}
+h2 {
+  font-size: 36px;
+  color: #1c1e23;
+}
+h2, h3, h5 {
+  margin: 0px 0px 16px;
+}
+h3, h4, h5 {
+font-size: 18px;
+}
+h3 {
+  color: #1c1e23;
+}
+h4 {
+  color: #CA2220;
+  margin: 0px 0px 6px;
+}
+h5 {
+  color: #6a7483;
+  font-weight: normal;
+  margin: 0px 0px 3px;
+}
+li {
+  color: #6a7483;
+}
+a, a:link, a:visited {
+  color: #ca2220;
+  font-weight: normal;
+  text-decoration: none;
+  position: relative;
+}
+a:hover, a:active, a:focus {
+  font-weight: bold;
+  text-decoration: underline;
+}
+header.section .left h1 a {
+  color: #fff;
+}
+/*a:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  border-bottom: 3px solid #;
+  transition: 0.3s;
+}
+a:hover:after {
+  width: 100%;
+}*/
+.left, .center, .right, .col {
+	display: inline-block;
+	vertical-align: top;
+	box-sizing: border-box;
+  position: relative;
+}
+main section {
+  padding: 60px;
+  margin: 0px auto;
+}
+hr {
+  width: 100%;
+  background-color: #efefef;
+  margin: 20px 0 17px;
+  height: 1.5px;
+  border-style: none;
+}
+.tagline {
+  color: ##CA2220;
+  margin: 0;
+}
+.intro-text {
+  font-size: 24px;
+  font-weight: lighter;
+  line-height: 32px;
+}
+.intro-text2 {
+  font-size: 16px;
+  font-weight: bold;
+  color: ##CA2220;
+}
+
+
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* 02 - HEADER */
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+header, nav, main, footer {
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 0px;
+  position: relative;
+  box-sizing: border-box;
+  background: #ffffff;
+}
+header, footer {
+  background: #1c1e23;
+}
+nav {
+  margin: 0 0 3px;
+  padding: 15px 0px;
+  box-shadow: 1px 2px 0px 0px rgba(0, 0, 0, 0.05);
+}
+section {
+  box-sizing: border-box;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0px auto;
+  padding: 0px 60px;
+  position: relative;
+}
+header section .left,
+header section .right {
+  vertical-align: middle;
+}
+header section .left {
+  width: 50%;
+}
+header section .right {
+  width: 49%;
+}
+header section .right a {
+  color: #ffffff;
+  font-size: 24px;
+}
+
+header section ul,
+nav section ul,
+footer section ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+header section li,
+nav section li,
+footer section li {
+  white-space: nowrap;
+}
+header section li {
+  line-height: 16px;
+}
+/*navigation*/
+nav section li {
+  display: inline-block;
+}
+nav section .left {
+  width: 84%;
+}
+nav section .right {
+  width: 15%;
+  text-align: right;
+}
+nav section .left a {
+  padding: 0px 20px 0px 0px;
+}
+nav section .right a {
+  padding: 0px 0px 0px 16px;
+}
+
+/*<button class="button">ABOUT TD</button>
+
+button {
+  background-color: ##CA2220;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 11px;
+  margin: 4px 2px;
+  cursor: pointer;
+}*/
+
+
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* 03 - FOOTER */
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+footer, footer p,
+footer section li {
+  color: #c6cad2;
+}
+footer section .footer {
+  font-size: 16px;
+}
+footer section {
+  padding: 40px 60px 60px;
+}
+footer section .left,
+footer section .center,
+footer section .right {
+  vertical-align: top;
+  display: inline-block;
+}
+footer section .left {
+  width: 40%;
+}
+footer section .center {
+  width: 200px;
+  margin: 0px 50px;
+}
+footer section .right {
+  width: 30%;
+  text-align: right;
+}
+footer section li:last-of-type {
+  margin: 20px 0px 0px;
+}
+
+
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* 04 - HOME PAGE */
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+/*.left*/
+main section .left {
+  width: 49%;
+  text-align: center;
+}
+main section .left img.feature-image {
+  max-width: 418px;
+  width: 100%;
+}
+
+/*.right*/
+main section .right {
+  width: 50%;
+  vertical-align: middle;
+}
+main section .right .home-header {
+  font-size: 54px;
+  line-height: 40px;
+  margin: 40px 0px 40px;
+}
+h2 span {
+  font-size: 18px;
+  font-weight: normal;
+  color: ##CA2220;
+  display: block;
+}
+p span {
+  font-size: 24px;
+  font-weight: lighter;
+}
+
+/*.service-icons*/
+main .service-icons {
+  width: 100%;
+  box-sizing: border-box;
+  background: #f9f9f9;
+  color: ##CA2220;
+  text-align: center;
+  margin: 40px auto 0px;
+  padding: 20px 0px 20px;
+}
+main .service-icons section {
+  padding: 0px;
+  margin: 30px auto 0px;
+}
+main .service-icons h3 {
+  color: ##CA2220;
+  font-size: 16px;
+}
+main .service-icons h3:hover {
+  color: #187bbd;
+}
+main .service-icons .col {
+ width: 17%;
+ margin: 0px 15px;
+}
+main .service-icons .col a,
+main section .intro-icons .col a {
+  padding: 136px 0px 0px;
+  text-decoration: none;
+  display: block;
+}
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* 05 - INTRO PAGE */
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+
+/*.intro-header*/
+main section.intro-page {
+  text-align: center;
+}
+main section.intro-page .intro-header {
+  width: 50%;
+  margin: 0px auto;
+  text-align: center;
+}
+main section.intro-page .intro-header p {
+  font-size: 18px;
+}
+
+/*.intro-icons*/
+main section.intro-page .intro-icons {
+  color: ##CA2220;
+  font-size: 14px;
+  margin: 100px auto 60px;
+  padding: 0px;
+}
+main section.intro-page .intro-icons h3 {
+  color: ##CA2220;
+}
+main section.intro-page .intro-icons h3:hover {
+  color: #187bbd;
+}
+main section.intro-page .intro-icons .col {
+  width: 25%;
+  margin: 0px 15px;
+}
+
+/*.essentials*/
+main section.intro-page .intro-icons .essentials .col:nth-of-type(1) a {
+  background: url(img/icon-10.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .essentials .col:nth-of-type(1) a:hover {
+  background: url(img/icon-hover-10.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .essentials .col:nth-of-type(2) a {
+  background: url(img/icon-05.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .essentials .col:nth-of-type(2) a:hover {
+  background: url(img/icon-hover-05.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .essentials .col:nth-of-type(3) a {
+  background: url(img/icon-06.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .essentials .col:nth-of-type(3) a:hover {
+  background: url(img/icon-hover-06.png) no-repeat top center;
+  background-size: 116px;
+}
+
+/*.mission-it*/
+main section.intro-page .intro-icons .mission-it .col:nth-of-type(1) a {
+  background: url(img/icon-07.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .mission-it .col:nth-of-type(1) a:hover {
+  background: url(img/icon-hover-07.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .mission-it .col:nth-of-type(2) a {
+  background: url(img/icon-08.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .mission-it .col:nth-of-type(2) a:hover {
+  background: url(img/icon-hover-08.png) no-repeat top center;
+  background-size: 116px;
+}
+
+/*.sharepoint*/
+main section.intro-page .intro-icons .sharepoint .col:nth-of-type(1) a {
+  background: url(img/icon-09.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .sharepoint .col:nth-of-type(1) a:hover {
+  background: url(img/icon-hover-09.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .sharepoint .col:nth-of-type(2) a {
+  background: url(img/icon-10.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .sharepoint .col:nth-of-type(2) a:hover {
+  background: url(img/icon-hover-10.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .sharepoint .col:nth-of-type(3) a {
+  background: url(img/icon-11.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .sharepoint .col:nth-of-type(3) a:hover {
+  background: url(img/icon-hover-11.png) no-repeat top center;
+  background-size: 116px;
+}
+
+/*.data-mgmt*/
+main section.intro-page .intro-icons .data-mgmt .col:nth-of-type(1) a {
+  background: url(img/icon-12.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .data-mgmt .col:nth-of-type(1) a:hover {
+  background: url(img/icon-hover-12.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .data-mgmt .col:nth-of-type(2) a {
+  background: url(img/icon-13.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .data-mgmt .col:nth-of-type(2) a:hover {
+  background: url(img/icon-hover-13.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .data-mgmt .col:nth-of-type(3) a {
+  background: url(img/icon-14.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .data-mgmt .col:nth-of-type(3) a:hover {
+  background: url(img/icon-hover-14.png) no-repeat top center;
+  background-size: 116px;
+}
+
+/*.security*/
+main section.intro-page .intro-icons .security .col:nth-of-type(1) a {
+  background: url(img/icon-06.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .security .col:nth-of-type(1) a:hover {
+  background: url(img/icon-hover-06.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .security .col:nth-of-type(2) a {
+  background: url(img/icon-16.png) no-repeat top center;
+  background-size: 116px;
+}
+main section.intro-page .intro-icons .security .col:nth-of-type(2) a:hover {
+  background: url(img/icon-hover-16.png) no-repeat top center;
+  background-size: 116px;
+}
+
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* 06 - CONTENTS PAGE */
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+main section.contents-page {
+  padding: 30px 60px 60px;
+}
+main section.contents-page h2 {
+    margin: 0px;
+}
+
+/*.left .page-nav*/
+main section.contents-page .left {
+  margin: 0px;
+  width: 270px;
+  text-align: left;
+}
+main section.contents-page .left .page-nav {
+  background: #f9f9f9;
+  width: 100%;
+  padding: 20px 0 20px 0;
+  margin: 0px 0px 20px 0px;
+  border: none;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: 1px 1px 0px 0px rgba(0, 0, 0, 0.05);
+}
+main section.contents-page .left .page-nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+main section.contents-page .left .page-nav .nav-title {
+  color: #1c1e23;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0px 0px 15px;
+  padding: 0px 30px;
+}
+main section.contents-page .left .page-nav li .page-nav-item {
+  display: block;
+  color: #6a7483;
+  display: block;
+  padding: 10px 0px 10px 30px;
+  text-decoration: none;
+}
+main section.contents-page .left .page-nav li .page-nav-item:hover,
+main section.contents-page .left .page-nav li .page-nav-item:active {
+  background-color: #1c1e23;
+  color: #ffffff;
+}
+main section.contents-page .left .page-nav li .page-nav-item .fa {
+  color: ##CA2220;
+  margin: 0 15px 0 0;
+}
+/*main section.contents-page .left .page-nav ul li {
+  list-style: none;
+  font-size: 14px;
+  line-height: 22px;
+  padding: 9px 10px 9px 30px;
+  padding-right: 30px;
+  -moz-transition: all 0.15s ease-out;
+  -o-transition: all 0.15s ease-out;
+  -webkit-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+  -ms-transition: all 0.15s ease-out;
+}*/
+
+/*.center .text*/
+main section.contents-page .center {
+  width: 60%;
+  margin: 0px 30px 0px 30px;
+}
+main section.contents-page .center img.conceptual {
+  max-width: 745px;
+  width: 100%;
+  margin: 20px 0;
+}
+main section.contents-page .center .text {
+  margin: 10px 0px 0px;
+  line-height: 22px;
+}
+main section.contents-page .center .text .2col-bullet-list {
+  width: 48%;
+  display: inline-block;
+}
+main section.contents-page .center .text .2col-bullet-list ul {
+
+}
+main section.contents-page .center .text .2col-bullet-list li {
+
+}
+
+/*.right .submit-ticket*/
+main section.contents-page .right {
+  width: 70px;
+  text-align: center;
+  position: absolute;
+  right: 60px;
+}
+main section.contents-page .right .submit-ticket .ticket {
+  border-radius: 5px;
+  background-color: #1c1e23;
+  font-size: 12px;
+  color: #dfe2e6;
+  line-height: 14px;
+  padding: 15px 0px;
+  margin: 0px 0px 35px;
+}
+main section.contents-page .right .submit-ticket .ticket span {
+  display: block;
+  font-weight: bold;
+  font-size: 18px;
+  color: #ffffff;
+  line-height: 24px;
+}
+main section.contents-page .right .submit-ticket .ticket-entry {
+  margin: 0px 0px 35px;
+  font-size: 14px;
+  line-height: 14px;
+  color: #6a7483;
+}
+main section.contents-page .right .submit-ticket .ticket-entry a {
+  color: #6a7483;
+}
+main section.contents-page .right .submit-ticket .ticket-entry a .fa {
+  margin: 0px 0px 7px;
+  color: ##CA2220;
+}
+main section.contents-page .right .submit-ticket .ticket-entry a:hover {
+  font-weight: bold;
+}
+
+
+
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+/* 07 - RESOURCE LIBRARY */
+/*-----------------------------------------------------------------*/
+/*-----------------------------------------------------------------*/
+main section.intro-page .3col-row {
+  width: 100%;
+  margin: 80px auto 60px;
+}
+main section.intro-page .3col-row .col {
+  width: 33%;
+  padding: 0px 15px;
+}
+main section.intro-page .3col-row .col ul {
+  margin: 0px 0px 22px 0px;
+}
+main section.intro-page .3col-row .col li {
+  padding: 6px 0 6px 35px;
+}

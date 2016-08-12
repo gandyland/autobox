@@ -7,13 +7,27 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-  <h1><%= link_to "AutoBox", root_url %></h1>
-
+  <header>
+      <section>
+          <div class="left">
+          	<h1><%= link_to "AutoBox", root_url %></h1>
+          </div>
+          <div class="right">
+            <ul>
+                <li><%= link_to "Cars", cars_path %></li>
+                <li><%= link_to "Services", services_path %></li>
+            </ul>
+          </div>
+      </section>
+  </header>
+<!-- <a class="waves-effect waves-light btn">AutoBox</a> -->
   <nav>
-    <%= link_to "Cars", cars_path %>
-    <%= link_to "Services", services_path %>
-  </nav>
+      <section>
+          <div class="left">
 
+          </div>
+      </section>
+  </nav>
   <%= yield %>
 </body>
 </html>
