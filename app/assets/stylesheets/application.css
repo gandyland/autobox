@@ -1,3 +1,5 @@
+@charset "utf-8";
+
 li {
   color: #6a7483;
 }
@@ -22,101 +24,6 @@ main section {
   margin: 0px auto;
 }
 
-/*
-h2, h3, h4 {
-  font-size: 1.2em;
-  margin: .5em;
-  padding: .5em;
-}
-
-a {
-  font-size: .75em;
-  margin: .5em;
-  padding: .5em;
-}
-
-a, a:visited {
-  text-decoration: none;
-  margin: .5em;
-  padding: .5em;
-}
-
-a:hover {
-  color:#CA2220;
-  font-weight: bold;
-  text-decoration: underline;
-}
-
-ul {
-  list-style-type: none;
-}
-
-li {
-  margin: .25em;
-  margin: .5em;
-  padding: .5em;
-}
-label {
-  margin: .25em;
-  padding: .1em;
-}
-
-
-nav a {
-  margin: .5em;
-  padding: .5em;
-  font-size: 1.25em;
-}
-
-nav a:hover {
-  background-color: #CA2220;
-  color: black;
-    border: 1px solid #CA2220
-}
-
-
-input {
-  display: block;
-  margin: 5px 0 20px 0;
-  padding: 10px;
-  border: solid 3px #CA2220;
-  width: 500px;
-  background:  black;
-  color: #CA2220;
-  font-size: 1em;
-}
-
-input[type=submit],
-a.delete {
-  width: auto;
-  padding: 9px 15px;
-  background-color: black;
-  border: 5px;
-  font-size: 14px;
-  color: #CA2220;
-}
-
-input.delete, a.delete {
-  background-color: #CA2220;
-}
-
-
-.artist-photo {
-  width: 400px;
-}
-
-span.nationality {
-  font-size: .5em;
-}
-
-.alert {
-  color:#f00;
-}
-.notice {
-  color:#00f;
-}
-*/
-@charset "utf-8";
 
 /**** colors
 red: 	#CA2220
@@ -671,16 +578,6 @@ main section.contents-page .center .text {
   margin: 10px 0px 0px;
   line-height: 22px;
 }
-main section.contents-page .center .text .2col-bullet-list {
-  width: 48%;
-  display: inline-block;
-}
-main section.contents-page .center .text .2col-bullet-list ul {
-
-}
-main section.contents-page .center .text .2col-bullet-list li {
-
-}
 
 /*.right .submit-ticket*/
 main section.contents-page .right {
@@ -720,26 +617,4 @@ main section.contents-page .right .submit-ticket .ticket-entry a .fa {
 }
 main section.contents-page .right .submit-ticket .ticket-entry a:hover {
   font-weight: bold;
-}
-
-
-
-/*-----------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
-/* 07 - RESOURCE LIBRARY */
-/*-----------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
-main section.intro-page .3col-row {
-  width: 100%;
-  margin: 80px auto 60px;
-}
-main section.intro-page .3col-row .col {
-  width: 33%;
-  padding: 0px 15px;
-}
-main section.intro-page .3col-row .col ul {
-  margin: 0px 0px 22px 0px;
-}
-main section.intro-page .3col-row .col li {
-  padding: 6px 0 6px 35px;
 }
